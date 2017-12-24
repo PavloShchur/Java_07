@@ -1,31 +1,28 @@
 package programmingBasics;
 
+import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.List;
 
 public class RotateArrayIntermediate {
 
-	public static void main(String[] args) {
-		rotate(new int[]{0, 1, 2}, 0);
-	}
+	public static void main(String[] args) { rotate(new Integer[]{0, 1, (Integer) null, 3}, 0); }
 	
-	public static void rotate(int[] nums, int k) {
-	    if(k > nums.length) 
-	        k=k%nums.length;
+	public static int[] rotate(Integer[] nums, int k) {
+		List<Integer> list = new ArrayList<Integer>(Arrays.asList(nums));
+		
+	    if(k > list.size()) k=k%list.size();
 	 
-	    int[] result = new int[nums.length];
+	    int[] result = new int[list.size()];
 	 
-	    for(int i=0; i < k; i++){
-	        result[i] = nums[nums.length-k+i];
-	    }
-	 
-	    int j = 0;
-	    for(int i=k; i<nums.length; i++){
-	        result[i] = nums[j];
-	        j++;
-	    }
-	 
-	    System.arraycopy( result, 0, nums, 0, nums.length );
+	    for(int i = k; i < list.size(); i++){ 
+	    	if ((Integer)list.get(list.size() - 1 - i) != null)
+				result[i] = list.get(nums.length - 1 - i);
+			else
+				result[i] = 0; }
 	    
-	    System.out.println(Arrays.toString(result));
+	    System.out.println("result : " + Arrays.toString(result));
+	    return result;
+	    
 	}
 }
