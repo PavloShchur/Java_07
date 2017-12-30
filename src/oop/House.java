@@ -5,4 +5,6 @@ public class House {
     private String color = "Black";
     private int roomCount = 5;
 
+    private String name;
+
 }
