@@ -10,12 +10,17 @@ public class Main {
 //        car.setName("Toyota");
 //
 //        System.out.println("car.getName() = " + car.getName());
-    	
-    	Phone phone = new Phone(1024,"Samsung","GSM");
+//    	
+//    	Phone phone = new Phone(1024,"Samsung","GSM");
+//
+//        System.out.println("phone.getType() = " + phone.getType());
+//        System.out.println("phone.getName() = " + phone.getName());
+//        phone.setName("iPhone");
+        
+//        Camry50 camry50 = new Camry50();
+//        camry50.stop();
 
-        System.out.println("phone.getType() = " + phone.getType());
-        System.out.println("phone.getName() = " + phone.getName());
-        phone.setName("iPhone");
+    	Rav4 rav4 =  new Rav4("50", 40);
         
     }
 }

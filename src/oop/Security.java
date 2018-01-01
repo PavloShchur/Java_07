@@ -1,4 +1,4 @@
-package ru.javabegin.training.fastjava2.shop.service;
+package oop;
 
 public class Security {
 

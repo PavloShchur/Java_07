@@ -1,4 +1,4 @@
-package ru.javabegin.training.fastjava2.shop.goods;
+package oop;
 
 public class Televisor {
 
@@ -19,7 +19,5 @@ public class Televisor {
     public void selectChannel(){
 
     }
-
-    // пока без гетеров и сетеров, т.к. код будет еще меняться
 
 }

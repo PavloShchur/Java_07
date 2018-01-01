@@ -1,4 +1,4 @@
-package ru.javabegin.training.fastjava2.shop;
+package oop;
 
 public class SalesRoom {
 
