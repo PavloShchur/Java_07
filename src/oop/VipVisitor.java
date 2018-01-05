@@ -1,18 +1,20 @@
 package oop;
 
-public class VipVisitor {
+public class VipVisitor extends BaseVisitor {
 
-    private String name;
+    // private String name; не нужно дублировать переменную, она уже есть в родительском классе Visitor
     private float discount;
 
-    public void buy(){
-
+    @Override
+    public void buy() {
+        if (!checkDiscount()) {
+            super.buy();
+        }else{
+            // купить со скидкой
+        }
     }
 
-    public void returnGoods(){
-
+    private boolean checkDiscount(){
+        return discount>0;
     }
-
-
-
 }

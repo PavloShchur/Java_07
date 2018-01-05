@@ -1,10 +1,8 @@
 package oop;
 
-public class Consultant {
+public class Consultant extends BaseEmployee {
 
-    private String name;
-    private String department;
-    private boolean free;
+
 
 
     public void consult(){

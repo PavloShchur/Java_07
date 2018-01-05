@@ -1,10 +1,8 @@
 package oop;
 
-public class Banker {
+public class Banker extends BaseEmployee{
 
-    private String name;
-    private int experience;
-    private String bank;
+    private BaseBank bank;
 
     public void sendRequest(){
 
