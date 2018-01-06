@@ -1,4 +1,4 @@
 package oop;
 
-public class HomeDepartment extends BaseDepartment {
+public class HomeDepartment extends AbstractDepartment {
 }

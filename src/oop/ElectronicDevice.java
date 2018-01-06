@@ -1,13 +1,29 @@
 package oop;
 
-public class ElectronicDevice extends BaseGoods {
+public class ElectronicDevice extends AbstractGoods implements ElectronicDeviceInterface{
 
-    public void on(){
 
+    public ElectronicDevice() {
     }
 
-    public void off(){
-
+    public ElectronicDevice(String name) {
+        super(name);
     }
 
+
+    public ElectronicDevice(double price, boolean hasGuarantee, String name, String company) {
+        super(price, hasGuarantee, name , company);
+    }
+
+
+
+    @Override
+    public void on() {
+        // общая реализация
+    }
+
+    @Override
+    public void off() {
+        // общая реализация
+    }
 }

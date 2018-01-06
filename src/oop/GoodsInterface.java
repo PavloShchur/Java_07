@@ -1,6 +1,5 @@
 package oop;
 
-
 public interface GoodsInterface {
 
     double getPrice();
@@ -10,6 +9,8 @@ public interface GoodsInterface {
     String getName();
 
     DepartmentInterface getDepartment();
+
+    void setDepartment(DepartmentInterface department);
 
     String getCompany();
 
