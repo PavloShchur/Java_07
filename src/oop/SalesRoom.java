@@ -4,12 +4,22 @@ import java.util.ArrayList;
 
 public class SalesRoom {
 
-    private ArrayList<DepartmentInterface> departmentList;// в каждом департаменте имеются свои сотрудники
+    public static final String SHOP_NAME = "technodom";
 
-    private String name;
+    private ArrayList<DepartmentInterface> departmentList = new ArrayList<DepartmentInterface>();// в каждом департаменте имеются свои сотрудники
 
-    private ArrayList<VisitorInterface> visitorList;
+    private ArrayList<VisitorInterface> visitorList = new ArrayList<VisitorInterface>();
 
-    private Administrator administrator;
+    public ArrayList<DepartmentInterface> getDepartmentList() {
+        return departmentList;
+    }
+
+    public void addDepartment(DepartmentInterface department){
+        departmentList.add(department);
+    }
+
+    public void addVisitor(VisitorInterface visitor){
+        visitorList.add(visitor);
+    }
 
 }

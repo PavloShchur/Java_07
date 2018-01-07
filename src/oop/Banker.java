@@ -1,8 +1,8 @@
 package oop;
 
-public class Banker extends BaseEmployee{
+public class Banker extends AbstractEmployee {
 
-    private BaseBank bank;
+    private BankInterface bank;
 
     public void sendRequest(){
 

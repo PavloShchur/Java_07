@@ -1,11 +1,22 @@
 package oop;
 
-public class Consultant extends BaseEmployee {
+public class Consultant extends AbstractEmployee {
 
 
+    public Consultant() {
+    }
 
 
-    public void consult(){
+    public Consultant(String name) {
+        super(name);
+    }
+
+    public ConsultResult consult(VisitorInterface visitor){
+        super.setFree(false);
+
+        // здесь должна быть логика, купит или пойдет домой
+
+        return ConsultResult.BUY;
 
     }
 

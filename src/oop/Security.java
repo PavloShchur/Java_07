@@ -1,6 +1,6 @@
 package oop;
 
-public class Security extends BaseEmployee {
+public class Security extends AbstractEmployee {
 
     public void checkVisitor(){
 

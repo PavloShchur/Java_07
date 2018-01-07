@@ -1,4 +1,19 @@
 package oop;
 
-public class VTB extends BaseBank {
+public class VTB extends AbstractBank {
+
+    public VTB(String name, String creditDescription) {
+        super(name, creditDescription);
+    }
+
+    @Override
+    public void checkInfo() {
+        super.checkInfo();
+    }
+
+    @Override
+    public void giveCredit() {
+    }
+
+
 }
